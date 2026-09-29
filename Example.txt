@@ -1,0 +1,12 @@
+namegroup Raven.App {
+   public class Processor {
+     public int Execute(int a, int b) {
+       const int multiplier = 10;
+       int baseResult = a + b;
+       if (baseResult > 5 and not (multiplier == 0)) {
+          baseResult = baseResult |> Multiply(multiplier);
+       } else {
+           baseResult = 0;
+        }
+      return baseResult;
+} } }
